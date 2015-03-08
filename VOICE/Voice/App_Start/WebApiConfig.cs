@@ -34,13 +34,13 @@ namespace Voice
             /// See at least 12 Features
         List<Feature> featureItems = new List<Feature>
             {
-        new Feature { Id = Guid.NewGuid().ToString(), Title = "1", Description = "User Interface" },
-        new Feature { Id = Guid.NewGuid().ToString(), Title = "2", Description = "Color Combination" },
-        new Feature { Id = Guid.NewGuid().ToString(), Title = "3", Description = "Performance" },
-        new Feature { Id = Guid.NewGuid().ToString(), Title = "4", Description = "Navigation" },
-        new Feature { Id = Guid.NewGuid().ToString(), Title = "5", Description = "Relevance" },
-        new Feature { Id = Guid.NewGuid().ToString(), Title = "6", Description = "Predictability" },
-        new Feature { Id = Guid.NewGuid().ToString(), Title = "7", Description = "Documentation" },
+        new Feature { Id = Guid.NewGuid().ToString(), Votes=0, Title = "1", Description = "User Interface" },
+        new Feature { Id = Guid.NewGuid().ToString(), Votes=0, Title = "2", Description = "Color Combination" },
+        new Feature { Id = Guid.NewGuid().ToString(), Votes=0, Title = "3", Description = "Performance" },
+        new Feature { Id = Guid.NewGuid().ToString(), Votes=0, Title = "4", Description = "Navigation" },
+        new Feature { Id = Guid.NewGuid().ToString(), Votes=0, Title = "5", Description = "Relevance" },
+        new Feature { Id = Guid.NewGuid().ToString(), Votes=0, Title = "6", Description = "Predictability" },
+        new Feature { Id = Guid.NewGuid().ToString(), Votes=0, Title = "7", Description = "Documentation" },
 
         };
 

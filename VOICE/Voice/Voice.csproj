@@ -198,11 +198,15 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\featureController.cs" />
+    <Compile Include="Controllers\featurevoteController.cs" />
+    <Compile Include="Controllers\profileController.cs" />
     <Compile Include="Controllers\registrationController.cs" />
     <Compile Include="Controllers\userController.cs" />
     <Compile Include="DataObjects\Feature.cs" />
     <Compile Include="DataObjects\User.cs" />
+    <Compile Include="DataObjects\UserVote.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
+    <Compile Include="Pattern.cs" />
     <Compile Include="ScheduledJobs\SampleJob.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

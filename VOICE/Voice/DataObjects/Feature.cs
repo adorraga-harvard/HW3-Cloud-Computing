@@ -8,10 +8,8 @@ namespace Voice.DataObjects
 
         public string Title { get; set; }
         public string Description { get; set; }
-        public string Votes { get; set; }
+        public int Votes { get; set; }
         public string VotesModDate { get; set; }
-
-
-
     }
+ 
 }
