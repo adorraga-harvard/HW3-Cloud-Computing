@@ -22,8 +22,8 @@ namespace Voice.Controllers
                          {
                              featureId = f.Id,
                              Title = f.Title,
-                             Votes = f.Votes ,
                              Description = f.Description,
+                             Votes = f.Votes,
                          };
             return result;
         }

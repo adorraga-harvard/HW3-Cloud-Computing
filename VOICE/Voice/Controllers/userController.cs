@@ -18,49 +18,7 @@ namespace Voice.Controllers
             MobileServiceContext context = new MobileServiceContext();
             DomainManager = new EntityDomainManager<User>(context, Request, Services);
         }
-        /*
-        /// <summary>
-        /// Update  User's status, role, and correspondinf VoteBalance
-        /// </summary>
-        /// <param name="id"></param>
-        /// <param name="status"></param>
-        /// <param name="role"></param>
-        /// <returns></returns>
-        public object PatchUser(string id, string status, string role)
-        {
-            
-            int VoteBalance = 0;
-            if (status == "Approved") VoteBalance = 100;
-            if (status == "Declined") VoteBalance = 0;
-            // find the current status of a given user
-            DataObjects.User user = (from u in context.Users
-                             where u.IDPId == id
-                             select u).SingleOrDefault();
-            if (user != default(DataObjects.User)) /// If the user is found
-            {
-                var curStatus = user.RegistrationStatus;
-                if (curStatus == "Approved" || curStatus == "Declined")
-                {
-                    // HTTP Status Conflict               
-                    var result = new { ErrorCode = "3", Message = "User's registration has already been set", RegistrationStatus = curStatus };
-                    return result;
-                }
-                else
-                {
-                    // Update the  User Table with the Status and Role of the user
-                    user.RegistrationStatus = status;
-                    user.Role = role;
-                    user.VoteBalance = VoteBalance;
-                    context.SaveChanges();
-                    return "Successful!";
-                }
-            }
-            else
-                return id + " not found.";
-             
-        }
-
-        */
+        
 
         public class Updater
         {
@@ -110,8 +68,6 @@ namespace Voice.Controllers
                 var result = new Updater() { ErrorCode = "3", Message = "User Info not found", RegistrationStatus = "N/A" };
                 return result;
             }
-
-
         }
 
 
